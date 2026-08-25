@@ -1,0 +1,9 @@
+services:
+  parser:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    container_name: shuiyinya-parser
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
